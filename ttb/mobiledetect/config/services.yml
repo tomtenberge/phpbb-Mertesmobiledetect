@@ -3,5 +3,7 @@ services:
         class: ttb\mobiledetect\event\main_listener
         arguments:
             - '@request'
+            - '@template'
         tags:
             - { name: event.listener }
+			
