@@ -2,5 +2,6 @@ services:
     ttb.mobiledetect.listener:
         class: ttb\mobiledetect\event\main_listener
         arguments:
+            - '@request'
         tags:
             - { name: event.listener }
