@@ -1,9 +1,8 @@
 services:
-    ttb.mobiledetect.listener:
-        class: ttb\mobiledetect\event\main_listener
-        arguments:
-            - '@request'
-            - '@template'
-        tags:
-            - { name: event.listener }
-			
+  ttb.mobiledetect.listener:
+    class: ttb\mobiledetect\event\main_listener
+    arguments:
+      - '@request'
+      - '@template'
+    tags:
+      - { name: event.listener }
